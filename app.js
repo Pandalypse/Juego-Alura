@@ -42,7 +42,7 @@ function condicionesIniciales() {
 function generarNumeroSecreto() {
     let numeroGenerado = Math.floor(Math.random()*numeroMaximo)+1;
     // si ya sorteamos todos los números
-    if (listaDeNumerosSordeados.length == numeroMaximo) {
+    if (listaDeNumerosSorteados.length == numeroMaximo) {
         asignarTextoElemento('p', 'ya se han sorteados todos los números posibles.');
         // deshabilitar el boton de nuevo juego
         document.getElementById('reiniciar').removeAttribute('disabled');
